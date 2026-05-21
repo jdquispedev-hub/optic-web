@@ -44,11 +44,13 @@ Frontend público de **Optic Platform**. Landing page moderna, minimalista y res
 - [x] Hook `useServices` con loading/error states
 - [x] Páginas actualizadas con skeletons de carga
 
-### Fase 4 ⬜ Pulido Visual
-- [ ] Animaciones con Tailwind (transiciones, hover effects)
-- [ ] Responsive completo (mobile first)
-- [ ] Lazy loading de imágenes
-- [ ] Modo oscuro opcional
+### Fase 4 ✅ Pulido Visual
+- [x] Modo oscuro con ThemeToggle (persistencia localStorage, respeta preferencia sistema)
+- [x] Animaciones scroll reveal (fade-in + slide-up con Intersection Observer)
+- [x] Transiciones suaves en hover de tarjetas (elevación)
+- [x] Smooth scroll en HTML
+- [x] Transición suave al cambiar tema (light ↔ dark)
+- [x] Hero full height con animación de entrada
 
 ### Fase 5 ⬜ Preparación para Producción
 - [ ] Dockerfile

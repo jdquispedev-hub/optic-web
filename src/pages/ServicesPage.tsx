@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useServices } from '@/hooks/useServices'
+import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { Eye, Contact2, Glasses, ScanLine, Sun, Wrench } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
@@ -15,15 +16,20 @@ const iconMap: Record<string, LucideIcon> = {
 
 const ServicesPage = () => {
   const { services, isLoading, error } = useServices()
+  const headerRef = useScrollAnimation({ threshold: 0.1 })
+  const gridRef = useScrollAnimation({ threshold: 0.05 })
 
   return (
     <>
       <Helmet>
         <title>Servicios — OpticPlatform</title>
-        <meta name="description" content="Conocé todos los servicios ópticos que ofrecemos: exámenes visuales, lentes de contacto, armazones premium y más." />
+        <meta name="description" content="Conocé todos los servicios ópticos que ofrecemos." />
       </Helmet>
       <section className="mx-auto max-w-6xl px-4 py-24">
-        <div className="mb-16 text-center">
+        <div
+          ref={headerRef.ref}
+          className={`mb-16 text-center ${headerRef.isVisible ? 'animate-slide-up' : 'opacity-0'}`}
+        >
           <h1 className="mb-4 text-4xl font-bold tracking-tight">Servicios</h1>
           <p className="mx-auto max-w-xl text-muted-foreground">
             Ofrecemos soluciones visuales completas con tecnología de vanguardia y atención personalizada.
@@ -54,11 +60,21 @@ const ServicesPage = () => {
         )}
 
         {!isLoading && !error && (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => {
+          <div
+            ref={gridRef.ref}
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            {services.map((service, index) => {
               const Icon = iconMap[service.icon] ?? Eye
               return (
-                <Card key={service.id} className="transition-shadow hover:shadow-md">
+                <Card
+                  key={service.id}
+                  className="transition-all hover:-translate-y-1 hover:shadow-lg"
+                  style={{
+                    animationDelay: `${index * 80}ms`,
+                    animationFillMode: 'both',
+                  }}
+                >
                   <CardHeader>
                     <div className="mb-2 flex size-10 items-center justify-center rounded-lg bg-primary/10">
                       <Icon className="size-5 text-primary" />

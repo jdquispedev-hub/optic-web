@@ -3,18 +3,24 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { useProducts } from '@/hooks/useProducts'
+import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
 const CatalogPage = () => {
   const { products, isLoading, error } = useProducts()
+  const headerRef = useScrollAnimation({ threshold: 0.1 })
+  const gridRef = useScrollAnimation({ threshold: 0.05 })
 
   return (
     <>
       <Helmet>
         <title>Catálogo — OpticPlatform</title>
-        <meta name="description" content="Explorá nuestro catálogo de armazones, lentes de sol y lentes recetados. Calidad y estilo para tu visión." />
+        <meta name="description" content="Explorá nuestro catálogo de armazones, lentes de sol y lentes recetados." />
       </Helmet>
       <section className="mx-auto max-w-6xl px-4 py-24">
-        <div className="mb-16 text-center">
+        <div
+          ref={headerRef.ref}
+          className={`mb-16 text-center ${headerRef.isVisible ? 'animate-slide-up' : 'opacity-0'}`}
+        >
           <h1 className="mb-4 text-4xl font-bold tracking-tight">Catálogo</h1>
           <p className="mx-auto max-w-xl text-muted-foreground">
             Descubrí nuestra colección de armazones, lentes de sol y lentes recetados.
@@ -48,9 +54,21 @@ const CatalogPage = () => {
         )}
 
         {!isLoading && !error && (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {products.map((product) => (
-              <Card key={product.id} className="flex flex-col transition-shadow hover:shadow-md">
+          <div
+            ref={gridRef.ref}
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            {products.map((product, index) => (
+              <Card
+                key={product.id}
+                className={`flex flex-col transition-all hover:-translate-y-1 hover:shadow-lg ${
+                  gridRef.isVisible ? 'animate-fade-in' : 'opacity-0'
+                }`}
+                style={{
+                  animationDelay: `${index * 60}ms`,
+                  animationFillMode: 'both',
+                }}
+              >
                 <CardHeader>
                   <div className="mb-2 flex aspect-[4/3] items-center justify-center rounded-lg bg-muted">
                     <span className="text-4xl text-muted-foreground/30">👓</span>
