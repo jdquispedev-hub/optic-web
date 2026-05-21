@@ -22,19 +22,20 @@ Frontend público de **Optic Platform**. Landing page moderna, minimalista y res
 - [x] Crear README.md con plan documentado
 - [x] Build de prueba exitoso
 
-### Fase 1 ⬜ Layout Base + Navegación
-- [ ] Header con logo + navegación (Inicio, Servicios, Catálogo, Contacto)
-- [ ] Footer con información empresa, WhatsApp, ubicación
-- [ ] Layout principal con `<Outlet />`
-- [ ] React Router con rutas
-- [ ] Header responsive (menú hamburguesa en mobile)
+### Fase 1 ✅ Layout Base + Navegación
+- [x] Header con logo + navegación (Inicio, Servicios, Catálogo, Contacto)
+- [x] Footer con información empresa, WhatsApp, ubicación e íconos
+- [x] Layout principal con `<Outlet />`
+- [x] React Router con rutas (Home, Servicios, Catálogo, Contacto)
+- [x] Header responsive con menú mobile (Sheet drawer)
+- [x] Header sticky con backdrop blur
 
-### Fase 2 ⬜ Páginas y Secciones
-- [ ] HomePage — Hero section con título, descripción, CTA
-- [ ] Servicios — Grid de tarjetas con servicios
-- [ ] Catálogo Público — Grid de productos con datos mock
-- [ ] Contacto — Formulario + WhatsApp + ubicación
-- [ ] SEO básico con `react-helmet-async`
+### Fase 2 ✅ Páginas y Secciones
+- [x] HomePage — Hero section con título, descripción, CTA
+- [x] Servicios — Grid de tarjetas con 6 servicios con íconos
+- [x] Catálogo Público — Grid de 6 productos mock con precio, disponibilidad, colores
+- [x] Contacto — Formulario + datos de contacto + WhatsApp link
+- [x] SEO básico con react-helmet-async (meta tags por página)
 
 ### Fase 3 ⬜ Datos Mock y Estado
 - [ ] Tipos TypeScript (`Product`, `Service`, `CompanyInfo`)
