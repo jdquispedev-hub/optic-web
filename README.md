@@ -37,10 +37,12 @@ Frontend público de **Optic Platform**. Landing page moderna, minimalista y res
 - [x] Contacto — Formulario + datos de contacto + WhatsApp link
 - [x] SEO básico con react-helmet-async (meta tags por página)
 
-### Fase 3 ⬜ Datos Mock y Estado
-- [ ] Tipos TypeScript (`Product`, `Service`, `CompanyInfo`)
-- [ ] Datos mock (`src/data/products.ts`, `src/data/services.ts`)
-- [ ] Hook personalizado `useProducts`
+### Fase 3 ✅ Datos Mock y Estado
+- [x] Tipos TypeScript (`Product`, `Service`, `CompanyInfo`)
+- [x] Datos mock (`src/data/products.ts`, `src/data/services.ts`, `src/data/company.ts`)
+- [x] Hook `useProducts` con loading/error states
+- [x] Hook `useServices` con loading/error states
+- [x] Páginas actualizadas con skeletons de carga
 
 ### Fase 4 ⬜ Pulido Visual
 - [ ] Animaciones con Tailwind (transiciones, hover effects)
