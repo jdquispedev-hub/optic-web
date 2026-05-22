@@ -1,48 +1,65 @@
 import { Helmet } from 'react-helmet-async'
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
 import { useProducts } from '@/hooks/useProducts'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import { useState } from 'react'
+
+const categories = ['Todos', 'Armazones', 'Lentes de Sol', 'Lentes de Contacto', 'Accesorios']
 
 const CatalogPage = () => {
   const { products, isLoading, error } = useProducts()
   const headerRef = useScrollAnimation({ threshold: 0.1 })
   const gridRef = useScrollAnimation({ threshold: 0.05 })
+  const [activeCategory, setActiveCategory] = useState('Todos')
+
+  const filtered = activeCategory === 'Todos'
+    ? products
+    : products.filter((p) => p.category === activeCategory)
 
   return (
     <>
       <Helmet>
-        <title>Catálogo — OpticPlatform</title>
-        <meta name="description" content="Explorá nuestro catálogo de armazones, lentes de sol y lentes recetados." />
+        <title>Catálogo — Óptica</title>
+        <meta name="description" content="Explorá nuestro catálogo de armazones, lentes de sol y más." />
       </Helmet>
       <section className="mx-auto max-w-6xl px-4 py-24">
         <div
           ref={headerRef.ref}
-          className={`mb-16 text-center ${headerRef.isVisible ? 'animate-slide-up' : 'opacity-0'}`}
+          className={`mb-12 text-center ${headerRef.isVisible ? 'animate-slide-up' : 'opacity-0'}`}
         >
-          <h1 className="mb-4 text-4xl font-bold tracking-tight">Catálogo</h1>
-          <p className="mx-auto max-w-xl text-muted-foreground">
-            Descubrí nuestra colección de armazones, lentes de sol y lentes recetados.
+          <h1 className="font-heading mb-4 text-4xl font-bold tracking-tight">Nuestro Catálogo</h1>
+          <p className="mx-auto max-w-xl text-muted-foreground leading-relaxed">
+            Explora nuestra colección de armazones, lentes de sol y accesorios para todas las edades.
           </p>
         </div>
 
+        <div className="mb-10 flex flex-wrap gap-3">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
+                activeCategory === cat
+                  ? 'border-primary bg-primary text-primary-foreground'
+                  : 'border-border bg-background text-muted-foreground hover:bg-muted'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
         {isLoading && (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <Card key={i} className="animate-pulse">
-                <CardHeader>
-                  <div className="mb-2 aspect-[4/3] rounded-lg bg-muted" />
-                  <div className="h-4 w-3/4 rounded bg-muted" />
-                </CardHeader>
-                <CardContent>
-                  <div className="mb-2 h-3 w-1/3 rounded bg-muted" />
-                  <div className="h-3 w-full rounded bg-muted" />
-                </CardContent>
-                <CardFooter>
-                  <div className="h-5 w-1/3 rounded bg-muted" />
-                </CardFooter>
-              </Card>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <div key={i} className="animate-pulse rounded-2xl border bg-card overflow-hidden">
+                <div className="aspect-[4/3] bg-muted" />
+                <div className="p-5 space-y-3">
+                  <div className="h-4 w-1/3 rounded bg-muted" />
+                  <div className="h-5 w-3/4 rounded bg-muted" />
+                  <div className="h-6 w-1/3 rounded bg-muted" />
+                </div>
+              </div>
             ))}
           </div>
         )}
@@ -56,55 +73,49 @@ const CatalogPage = () => {
         {!isLoading && !error && (
           <div
             ref={gridRef.ref}
-            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            className={`grid gap-6 sm:grid-cols-2 lg:grid-cols-4 ${gridRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
           >
-            {products.map((product, index) => (
-              <Card
+            {filtered.map((product, index) => (
+              <div
                 key={product.id}
-                className={`flex flex-col transition-all hover:-translate-y-1 hover:shadow-lg ${
-                  gridRef.isVisible ? 'animate-fade-in' : 'opacity-0'
-                }`}
+                className="group flex flex-col rounded-2xl border bg-card overflow-hidden transition-all hover:-translate-y-1 hover:shadow-lg"
                 style={{
                   animationDelay: `${index * 60}ms`,
                   animationFillMode: 'both',
                 }}
               >
-                <CardHeader>
-                  <div className="mb-2 flex aspect-[4/3] items-center justify-center rounded-lg bg-muted">
-                    <span className="text-4xl text-muted-foreground/30">👓</span>
-                  </div>
-                  <div className="flex items-start justify-between gap-2">
-                    <CardTitle className="text-base">{product.name}</CardTitle>
-                    <Badge variant={product.available ? 'default' : 'secondary'}>
-                      {product.available ? 'Disponible' : 'Agotado'}
+                <div className="relative flex aspect-[4/3] items-center justify-center bg-muted">
+                  {product.badge && (
+                    <Badge className="absolute left-3 top-3 bg-accent text-accent-foreground hover:bg-accent">
+                      {product.badge}
                     </Badge>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <p className="mb-2 text-xs text-muted-foreground">{product.brand}</p>
-                  <p className="text-sm text-muted-foreground">{product.description}</p>
+                  )}
+                  <span className="text-5xl text-muted-foreground/30">👓</span>
+                </div>
+                <div className="flex flex-1 flex-col p-5">
+                  <p className="mb-1 text-xs text-muted-foreground">{product.brand}</p>
+                  <h3 className="font-heading mb-1 text-base font-semibold">{product.name}</h3>
                   {product.colors && (
-                    <div className="mt-3 flex gap-1.5">
+                    <div className="mb-3 flex gap-1.5">
                       {product.colors.map((color) => (
                         <span
                           key={color}
-                          className="size-4 rounded-full border"
+                          className="size-3.5 rounded-full border"
                           style={{ backgroundColor: color }}
-                          title={color}
                         />
                       ))}
                     </div>
                   )}
-                </CardContent>
-                <CardFooter className="flex items-center justify-between">
-                  <span className="text-lg font-bold">
-                    ${product.price.toLocaleString('es-AR')}
-                  </span>
-                  <Button size="sm" disabled={!product.available}>
-                    Consultar
-                  </Button>
-                </CardFooter>
-              </Card>
+                  <div className="mt-auto flex items-center justify-between">
+                    <span className="text-lg font-bold text-primary">
+                      ${product.price.toLocaleString('es-MX')}
+                    </span>
+                    <span className={`text-xs font-medium ${product.available ? 'text-primary' : 'text-destructive'}`}>
+                      {product.available ? 'Disponible' : 'Agotado'}
+                    </span>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         )}

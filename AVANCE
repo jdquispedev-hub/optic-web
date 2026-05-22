@@ -1,0 +1,2349 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "xpVmS",
+      "x": 0,
+      "y": 0,
+      "name": "Home",
+      "clip": true,
+      "width": 1440,
+      "fill": "$color-background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "czRyz",
+          "name": "Navbar",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "$color-surface",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$color-border"
+          },
+          "gap": 40,
+          "padding": [
+            0,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "LbPG2",
+              "fill": "$color-primary",
+              "content": "Óptica",
+              "fontFamily": "$font-heading",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "oVWI5",
+              "width": "fill_container",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "f5ul1",
+                  "fill": "$color-text-secondary",
+                  "content": "Inicio",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "UJ0BV",
+                  "fill": "$color-text-secondary",
+                  "content": "Servicios",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "lJT8T",
+                  "fill": "$color-text-secondary",
+                  "content": "Catálogo",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "IE7ud",
+                  "fill": "$color-text-secondary",
+                  "content": "Contacto",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "e8lnFL",
+              "fill": "$color-primary",
+              "cornerRadius": "$radius-md",
+              "padding": [
+                12,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dvHJ1",
+                  "fill": "#FFFFFF",
+                  "content": "Agendar Cita",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sxv22",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            120,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "xONcj",
+              "fill": "$color-text-primary",
+              "textGrowth": "fixed-width",
+              "width": 640,
+              "content": "Tu visión, nuestra prioridad",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 52,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "C4lI9",
+              "fill": "$color-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 512,
+              "content": "Expertos en salud visual con los mejores equipos de diagnóstico y una amplia selección de armazones de las mejores marcas.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "pmzG2",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "a8HdQ",
+                  "fill": "$color-primary",
+                  "cornerRadius": "$radius-md",
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hmsvl",
+                      "fill": "#FFFFFF",
+                      "content": "Agendar una cita",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n7r0LV",
+                  "cornerRadius": "$radius-md",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$color-primary"
+                  },
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lilD2",
+                      "fill": "$color-primary",
+                      "content": "Ver servicios",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "C4wXfm",
+          "name": "Features",
+          "width": "fill_container",
+          "fill": "$color-primary-light",
+          "gap": 24,
+          "padding": [
+            80,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "P6Fyjf",
+              "width": "fill_container",
+              "fill": "$color-surface",
+              "cornerRadius": "$radius-lg",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "d9YkC",
+                  "fill": "$color-primary",
+                  "content": "Exámenes Visuales",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "HkXzM",
+                  "fill": "$color-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Diagnóstico preciso con tecnología de punta para cuidar tu salud visual.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mor8E",
+              "width": "fill_container",
+              "fill": "$color-surface",
+              "cornerRadius": "$radius-lg",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vNq20",
+                  "fill": "$color-primary",
+                  "content": "Lentes de Contacto",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "WJ13J",
+                  "fill": "$color-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Variedad de marcas y adaptación personalizada para tu comodidad.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "goDDz",
+              "width": "fill_container",
+              "fill": "$color-surface",
+              "cornerRadius": "$radius-lg",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gHJ9h",
+                  "fill": "$color-primary",
+                  "content": "Lentes de Sol",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "OoVwE",
+                  "fill": "$color-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Protección UV con estilo. Encuentra el par perfecto para ti.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "I28a3M",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$color-primary",
+          "gap": 48,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "WhwMj",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KNNDO",
+                  "fill": "#FFFFFF",
+                  "content": "Óptica",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "Tixdb",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Cuidando tu salud visual desde 1998. Calidad y calidez en cada consulta.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lxaTI",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SbsJk",
+                  "fill": "#FFFFFF",
+                  "content": "Servicios",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "dtmtE",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Exámenes Visuales",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "yHy2x",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Lentes de Contacto",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cMBVR",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Lentes de Sol",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "J6WEWg",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Adaptación",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I6Ajo",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VdzxS",
+                  "fill": "#FFFFFF",
+                  "content": "Contacto",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "qoCBR",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Calle Principal #123",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "kQpB1",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Col. Centro, CP 34000",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "RbTxq",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "(618) 123-4567",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "L2sNmq",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "info@optica.mx",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ge08e",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "R7Sf4",
+                  "fill": "#FFFFFF",
+                  "content": "Horarios",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "B9II0",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Lun-Vie: 9:00 - 19:00",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cZWRH",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Sáb: 9:00 - 14:00",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FzoHp",
+                  "opacity": 0.7,
+                  "fill": "#FFFFFF",
+                  "content": "Dom: Cerrado",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "x3wxti",
+      "x": 1500,
+      "y": 0,
+      "name": "Servicios",
+      "clip": true,
+      "width": 1440,
+      "fill": "$color-background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Yvo0V",
+          "name": "Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "aoIUc",
+              "fill": "$color-text-primary",
+              "content": "Nuestros Servicios",
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Cr8LV",
+              "fill": "$color-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 512,
+              "content": "Ofrecemos atención visual integral con profesionales capacitados y equipo de última generación.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "F5ksAN",
+          "name": "Services Grid",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            0,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gk5WG",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "OJCFQ",
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "q9E6Ph",
+                      "fill": "$color-accent-light",
+                      "cornerRadius": "$radius-sm",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "g1WZyP",
+                          "fill": "$color-accent",
+                          "content": "Desde $350",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "f33RWb",
+                      "fill": "$color-text-primary",
+                      "content": "Examen Visual Completo",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "d0oBUu",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Evaluación exhaustiva de tu agudeza visual, presión intraocular y salud ocular con equipos automatizados.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "S4TYp",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1.5,
+                        "fill": "$color-primary"
+                      },
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "B6Kme8",
+                          "fill": "$color-primary",
+                          "content": "Agendar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "E6tyP",
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "h7d0qY",
+                      "fill": "$color-accent-light",
+                      "cornerRadius": "$radius-sm",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UjCMF",
+                          "fill": "$color-accent",
+                          "content": "Desde $500",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "GIlYx",
+                      "fill": "$color-text-primary",
+                      "content": "Lentes de Contacto",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ghTDk",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Valoración y adaptación de lentes de contacto blandos, rígidos, tóricos y multifocales.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "F8hs7t",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1.5,
+                        "fill": "$color-primary"
+                      },
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PLiuf",
+                          "fill": "$color-primary",
+                          "content": "Agendar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "t6LPso",
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GS4jA",
+                      "fill": "$color-accent-light",
+                      "cornerRadius": "$radius-sm",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EjOOH",
+                          "fill": "$color-accent",
+                          "content": "Desde $1,200",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "gNBwH",
+                      "fill": "$color-text-primary",
+                      "content": "Lentes de Sol",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "H9ShMs",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Protección UV400 con filtro polarizado. Marcas como Ray-Ban, Oakley y Arnette.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KRqc8",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1.5,
+                        "fill": "$color-primary"
+                      },
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "X9pcyZ",
+                          "fill": "$color-primary",
+                          "content": "Agendar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "esqST",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KT6Sf",
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LA090",
+                      "fill": "$color-accent-light",
+                      "cornerRadius": "$radius-sm",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "w0ILRE",
+                          "fill": "$color-accent",
+                          "content": "Gratuito",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ABOLA",
+                      "fill": "$color-text-primary",
+                      "content": "Adaptación de Lentes",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ixROP",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Ajuste personalizado de armazones y revisión de graduación para garantizar comodidad.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "o1UYWT",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1.5,
+                        "fill": "$color-primary"
+                      },
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nzWmu",
+                          "fill": "$color-primary",
+                          "content": "Agendar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FQ1Db",
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "L8Ma7",
+                      "fill": "$color-accent-light",
+                      "cornerRadius": "$radius-sm",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JjNop",
+                          "fill": "$color-accent",
+                          "content": "Consulta",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "bTG99",
+                      "fill": "$color-text-primary",
+                      "content": "Terapia Visual",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cH3OV",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Programas personalizados para problemas de enfoque, visión binocular y aprendizaje visual.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MXwXm",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1.5,
+                        "fill": "$color-primary"
+                      },
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fhYyi",
+                          "fill": "$color-primary",
+                          "content": "Agendar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "e5SC8",
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gvMXQ",
+                      "fill": "$color-accent-light",
+                      "cornerRadius": "$radius-sm",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "idK5X",
+                          "fill": "$color-accent",
+                          "content": "Desde $250",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ndaSt",
+                      "fill": "$color-text-primary",
+                      "content": "Lentes Infantiles",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "z6ByK",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Diseños ergonómicos y seguros para niños. Exámenes de la vista sin estrés.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g9pM7b",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1.5,
+                        "fill": "$color-primary"
+                      },
+                      "padding": [
+                        10,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qBQ8w",
+                          "fill": "$color-primary",
+                          "content": "Agendar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "OddEx",
+      "x": 3000,
+      "y": 0,
+      "name": "Catálogo",
+      "clip": true,
+      "width": 1440,
+      "fill": "$color-background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "M6q332",
+          "name": "Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "q6RsaC",
+              "fill": "$color-text-primary",
+              "content": "Nuestro Catálogo",
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "y51in2",
+              "fill": "$color-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 512,
+              "content": "Explora nuestra colección de armazones, lentes de sol y accesorios para todas las edades.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p9SgEX",
+          "width": "fill_container",
+          "gap": 12,
+          "padding": [
+            0,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "WQOL9",
+              "cornerRadius": "$radius-md",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$color-border"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "E8LNw",
+                  "fill": "$color-text-secondary",
+                  "content": "Todos",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vobtu",
+              "cornerRadius": "$radius-md",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$color-border"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vYhUm",
+                  "fill": "$color-text-secondary",
+                  "content": "Armazones",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Gh8Q0",
+              "cornerRadius": "$radius-md",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$color-border"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bFCGw",
+                  "fill": "$color-text-secondary",
+                  "content": "Lentes de Sol",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DNgqH",
+              "cornerRadius": "$radius-md",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$color-border"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p5aSBp",
+                  "fill": "$color-text-secondary",
+                  "content": "Lentes de Contacto",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "APhAX",
+              "cornerRadius": "$radius-md",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$color-border"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BR007",
+                  "fill": "$color-text-secondary",
+                  "content": "Accesorios",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NkfN0",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "u5fJ9",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zpPRC",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "u3TjoO",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": "$color-primary-light"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "l7NiwH",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "m5bWdw",
+                          "fill": "$color-accent-light",
+                          "cornerRadius": "$radius-sm",
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "mQvDT",
+                              "fill": "$color-accent",
+                              "content": "Más vendido",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "OpCct",
+                          "fill": "$color-text-secondary",
+                          "content": "Ray-Ban",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Z3Cio",
+                          "fill": "$color-text-primary",
+                          "content": "Ray-Ban Aviator",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OHhRr",
+                          "fill": "$color-primary",
+                          "content": "$3,290",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LGgED",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hrEG5",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": "$color-primary-light"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UuNeu",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tcfGf",
+                          "fill": "$color-accent-light",
+                          "cornerRadius": "$radius-sm",
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qkMUJ",
+                              "fill": "$color-accent",
+                              "content": "Nuevo",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "AoIRy",
+                          "fill": "$color-text-secondary",
+                          "content": "Oakley",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "KCJ2I",
+                          "fill": "$color-text-primary",
+                          "content": "Oakley Holbrook",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HZcD6",
+                          "fill": "$color-primary",
+                          "content": "$4,150",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nYBOT",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wjOR2",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": "$color-primary-light"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TXwxr",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hRoTW",
+                          "fill": "$color-text-secondary",
+                          "content": "Arnette",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZnzwJ",
+                          "fill": "$color-text-primary",
+                          "content": "Arnette Ryan",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "s0xww7",
+                          "fill": "$color-primary",
+                          "content": "$2,890",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "V2Qlkk",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sEsDH",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": "$color-primary-light"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "w6TtIR",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "O1K6W",
+                          "fill": "$color-accent-light",
+                          "cornerRadius": "$radius-sm",
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ZsWH7",
+                              "fill": "$color-accent",
+                              "content": "Oferta",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "PE4QN",
+                          "fill": "$color-text-secondary",
+                          "content": "Polaroid",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NNTSX",
+                          "fill": "$color-text-primary",
+                          "content": "Polaroid PLD",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nwQQh",
+                          "fill": "$color-primary",
+                          "content": "$1,750",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Tw2Qt",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wNLnf",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "T1wXy",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": "$color-primary-light"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vHMwX",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CW3AA",
+                          "fill": "$color-text-secondary",
+                          "content": "Vogue",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IsEQd",
+                          "fill": "$color-text-primary",
+                          "content": "Vogue VO5191",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "E5cfn",
+                          "fill": "$color-primary",
+                          "content": "$2,450",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "z5Ewc",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MbnMf",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": "$color-primary-light"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RTAK5",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "y7K19",
+                          "fill": "$color-accent-light",
+                          "cornerRadius": "$radius-sm",
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Apbgr",
+                              "fill": "$color-accent",
+                              "content": "Popular",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "I2ogI",
+                          "fill": "$color-text-secondary",
+                          "content": "Ray-Ban",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cm106",
+                          "fill": "$color-text-primary",
+                          "content": "Ray-Ban Clubmaster",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IoZki",
+                          "fill": "$color-primary",
+                          "content": "$3,850",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "u1gvh",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "EP3ku",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": "$color-primary-light"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PbvNY",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c8cP2",
+                          "fill": "$color-text-secondary",
+                          "content": "Oakley",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yd0b2",
+                          "fill": "$color-text-primary",
+                          "content": "Oakley Latch",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ncYaw",
+                          "fill": "$color-primary",
+                          "content": "$3,620",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KXzvW",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$color-surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$color-border"
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "B7Hcjs",
+                      "width": "fill_container",
+                      "height": 200,
+                      "fill": "$color-primary-light"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oZzQ9",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dwS7g",
+                          "fill": "$color-text-secondary",
+                          "content": "Arnette",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "u461h",
+                          "fill": "$color-text-primary",
+                          "content": "Arnette Alibi",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ECtsN",
+                          "fill": "$color-primary",
+                          "content": "$2,340",
+                          "fontFamily": "$font-body",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Yq7dd",
+      "x": 4500,
+      "y": 0,
+      "name": "Contacto",
+      "clip": true,
+      "width": 1440,
+      "fill": "$color-background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "uDpe7",
+          "name": "Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "hQgvc",
+              "fill": "$color-text-primary",
+              "content": "Contacto",
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "TAK9m",
+              "fill": "$color-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 512,
+              "content": "Estamos aquí para ayudarte. Agenda tu cita o escríbenos cualquier duda.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rRqOg",
+          "name": "Columns",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "IRYyC",
+              "width": "fill_container",
+              "fill": "$color-surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": {
+                "thickness": 1,
+                "fill": "$color-border"
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "DSwlX",
+                  "fill": "$color-text-primary",
+                  "content": "Envíanos un mensaje",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "bBact",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tr7QP",
+                      "fill": "$color-text-primary",
+                      "content": "Nombre completo",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "J8EZXH",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color-background",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$color-border"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vtY2T",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y1g7bg",
+                      "fill": "$color-text-primary",
+                      "content": "Correo electrónico",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Michy",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color-background",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$color-border"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "u0lrOP",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WspVi",
+                      "fill": "$color-text-primary",
+                      "content": "Teléfono",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ka9Sb",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$color-background",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$color-border"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DhDeZ",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KfnaG",
+                      "fill": "$color-text-primary",
+                      "content": "Mensaje",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JrRK1",
+                      "width": "fill_container",
+                      "height": 120,
+                      "fill": "$color-background",
+                      "cornerRadius": "$radius-md",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$color-border"
+                      },
+                      "padding": [
+                        12,
+                        16
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "euVUE",
+                  "width": "fill_container",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "r2E9FF",
+                      "fill": "$color-primary",
+                      "cornerRadius": "$radius-md",
+                      "padding": [
+                        14,
+                        32
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "D0cIs",
+                          "fill": "#FFFFFF",
+                          "content": "Enviar mensaje",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zqfGU",
+              "width": 420,
+              "fill": "$color-primary-light",
+              "cornerRadius": "$radius-lg",
+              "layout": "vertical",
+              "gap": 32,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lL00O",
+                  "fill": "$color-primary",
+                  "content": "Información",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "kRuGD",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DKFry",
+                      "fill": "$color-primary",
+                      "content": "Dirección",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kE3Xc",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Calle Principal #123, Col. Centro\nDurango, Dgo. CP 34000",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pqQVp",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AR0AC",
+                      "fill": "$color-primary",
+                      "content": "Teléfono",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "t3Fhry",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "(618) 123-4567\n(618) 765-4321",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qhjKi",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "etnH9",
+                      "fill": "$color-primary",
+                      "content": "Correo",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mtjHR",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "info@optica.mx\ncontacto@optica.mx",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fg08i",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CodnO",
+                      "fill": "$color-primary",
+                      "content": "Horarios",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EpnJk",
+                      "fill": "$color-text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Lun - Vie: 9:00 - 19:00\nSáb: 9:00 - 14:00",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "color-accent": {
+      "type": "color",
+      "value": "#C9A84C"
+    },
+    "color-accent-light": {
+      "type": "color",
+      "value": "#FDF6E3"
+    },
+    "color-background": {
+      "type": "color",
+      "value": "#FAF8F5"
+    },
+    "color-border": {
+      "type": "color",
+      "value": "#E5E7EB"
+    },
+    "color-error": {
+      "type": "color",
+      "value": "#EF4444"
+    },
+    "color-primary": {
+      "type": "color",
+      "value": "#1A6B6B"
+    },
+    "color-primary-light": {
+      "type": "color",
+      "value": "#E8F5F4"
+    },
+    "color-success": {
+      "type": "color",
+      "value": "#10B981"
+    },
+    "color-surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color-text-primary": {
+      "type": "color",
+      "value": "#1A1A2E"
+    },
+    "color-text-secondary": {
+      "type": "color",
+      "value": "#6B7280"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Playfair Display"
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 16
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 8
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 4
+    }
+  }
+}

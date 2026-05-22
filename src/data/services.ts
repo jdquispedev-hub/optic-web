@@ -3,44 +3,50 @@ import type { Service } from './types'
 export const services: Service[] = [
   {
     id: '1',
-    title: 'Exámenes Visuales',
+    title: 'Examen Visual Completo',
     description:
-      'Evaluación completa de la visión con tecnología digital avanzada para detectar cualquier problema visual.',
+      'Evaluación exhaustiva de tu agudeza visual, presión intraocular y salud ocular con equipos automatizados.',
     icon: 'Eye',
+    badge: 'Desde $350',
   },
   {
     id: '2',
     title: 'Lentes de Contacto',
     description:
-      'Asesoramiento profesional y adaptación de lentes de contacto de las mejores marcas internacionales.',
+      'Valoración y adaptación de lentes de contacto blandos, rígidos, tóricos y multifocales.',
     icon: 'Contact2',
+    badge: 'Desde $500',
   },
   {
     id: '3',
-    title: 'Armazones Premium',
+    title: 'Lentes de Sol',
     description:
-      'Amplia colección de armazones de diseño: desde clásicos hasta las últimas tendencias de moda.',
-    icon: 'Glasses',
+      'Protección UV400 con filtro polarizado. Marcas como Ray-Ban, Oakley y Arnette.',
+    icon: 'Sun',
+    badge: 'Desde $1,200',
   },
   {
     id: '4',
-    title: 'Lentes Progresivos',
+    title: 'Adaptación de Lentes',
     description:
-      'Lentes de visión progresiva personalizados para una transición suave entre distancias.',
-    icon: 'ScanLine',
+      'Ajuste personalizado de armazones y revisión de graduación para garantizar comodidad.',
+    icon: 'Wrench',
+    badge: 'Gratuito',
   },
   {
     id: '5',
-    title: 'Protección UV',
+    title: 'Terapia Visual',
     description:
-      'Lentes con filtro UV certificado para cuidar tu visión del sol y la luz azul de pantallas.',
-    icon: 'Sun',
+      'Programas personalizados para problemas de enfoque, visión binocular y aprendizaje visual.',
+    icon: 'ScanLine',
+    badge: 'Consulta',
   },
   {
     id: '6',
-    title: 'Mantenimiento y Reparación',
+    title: 'Lentes Infantiles',
     description:
-      'Ajustes, limpieza profesional y reparación de armazones y lentes.',
-    icon: 'Wrench',
+      'Diseños ergonómicos y seguros para niños. Exámenes de la vista sin estrés.',
+    icon: 'Glasses',
+    badge: 'Desde $250',
   },
 ]

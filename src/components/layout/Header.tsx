@@ -15,8 +15,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <Link to="/" className="text-xl font-bold tracking-tight">
-          Optic<span className="text-primary">Platform</span>
+        <Link to="/" className="font-heading text-2xl font-bold text-primary tracking-tight">
+          Óptica
         </Link>
 
         <nav className="hidden items-center gap-1 sm:flex">
@@ -31,7 +31,13 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
+          <Link
+            to="/contacto"
+            className="hidden rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 sm:inline-block"
+          >
+            Agendar Cita
+          </Link>
           <ThemeToggle />
           <Sheet>
             <SheetTrigger

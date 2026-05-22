@@ -1,9 +1,6 @@
 import { Helmet } from 'react-helmet-async'
-import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
 import { companyInfo } from '@/data/company'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 
@@ -15,102 +12,98 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contacto — OpticPlatform</title>
-        <meta name="description" content="Contactanos por WhatsApp, email o visitanos." />
+        <title>Contacto — Óptica</title>
+        <meta name="description" content="Contactanos por email, teléfono o visitanos." />
       </Helmet>
       <section className="mx-auto max-w-6xl px-4 py-24">
         <div
           ref={headerRef.ref}
           className={`mb-16 text-center ${headerRef.isVisible ? 'animate-slide-up' : 'opacity-0'}`}
         >
-          <h1 className="mb-4 text-4xl font-bold tracking-tight">Contacto</h1>
-          <p className="mx-auto max-w-xl text-muted-foreground">
-            Estamos para ayudarte. Escribinos o visitanos.
+          <h1 className="font-heading mb-4 text-4xl font-bold tracking-tight">Contacto</h1>
+          <p className="mx-auto max-w-xl text-muted-foreground leading-relaxed">
+            Estamos aquí para ayudarte. Agenda tu cita o escríbenos cualquier duda.
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-5">
           <div
             ref={formRef.ref}
-            className={formRef.isVisible ? 'animate-slide-up' : 'opacity-0'}
+            className={`lg:col-span-3 ${formRef.isVisible ? 'animate-slide-up' : 'opacity-0'}`}
           >
-            <Card>
-              <CardHeader>
-                <CardTitle>Envianos un mensaje</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        Nombre
-                      </label>
-                      <Input id="name" placeholder="Tu nombre" />
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
-                        Email
-                      </label>
-                      <Input id="email" type="email" placeholder="tu@email.com" />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      Mensaje
-                    </label>
-                    <Textarea id="message" placeholder="¿En qué podemos ayudarte?" rows={5} />
-                  </div>
-                  <Button type="submit" className="w-full sm:w-auto">
-                    Enviar mensaje
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <div className="rounded-2xl border bg-card p-8">
+              <h2 className="font-heading mb-6 text-2xl font-semibold">Envíanos un mensaje</h2>
+              <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+                <div className="space-y-2">
+                  <label htmlFor="name" className="text-sm font-medium">
+                    Nombre completo
+                  </label>
+                  <Input id="name" placeholder="Tu nombre" />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="email" className="text-sm font-medium">
+                    Correo electrónico
+                  </label>
+                  <Input id="email" type="email" placeholder="tu@email.com" />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="phone" className="text-sm font-medium">
+                    Teléfono
+                  </label>
+                  <Input id="phone" type="tel" placeholder="(618) 123-4567" />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="message" className="text-sm font-medium">
+                    Mensaje
+                  </label>
+                  <Textarea id="message" placeholder="¿En qué podemos ayudarte?" rows={4} />
+                </div>
+                <button
+                  type="submit"
+                  className="rounded-lg bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+                >
+                  Enviar mensaje
+                </button>
+              </form>
+            </div>
           </div>
 
           <div
             ref={infoRef.ref}
-            className={`space-y-6 ${infoRef.isVisible ? 'animate-slide-up' : 'opacity-0'}`}
+            className={`lg:col-span-2 space-y-6 ${infoRef.isVisible ? 'animate-slide-up' : 'opacity-0'}`}
             style={{ animationDelay: '100ms', animationFillMode: 'both' }}
           >
-            <Card>
-              <CardContent className="flex items-start gap-4 p-6">
-                <Phone className="mt-1 size-5 shrink-0 text-primary" />
+            <div className="rounded-2xl bg-primary/5 p-8">
+              <h2 className="font-heading mb-6 text-2xl font-semibold text-primary">Información</h2>
+              <div className="space-y-6">
                 <div>
-                  <h3 className="font-medium">Teléfono</h3>
-                  <p className="text-sm text-muted-foreground">{companyInfo.phone}</p>
+                  <h3 className="mb-1 text-sm font-semibold text-primary">Dirección</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                    {companyInfo.address}
+                  </p>
                 </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="flex items-start gap-4 p-6">
-                <Mail className="mt-1 size-5 shrink-0 text-primary" />
                 <div>
-                  <h3 className="font-medium">Email</h3>
-                  <p className="text-sm text-muted-foreground">{companyInfo.email}</p>
+                  <h3 className="mb-1 text-sm font-semibold text-primary">Teléfono</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {companyInfo.phone}
+                    {companyInfo.phone2 ? `\n${companyInfo.phone2}` : ''}
+                  </p>
                 </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="flex items-start gap-4 p-6">
-                <MapPin className="mt-1 size-5 shrink-0 text-primary" />
                 <div>
-                  <h3 className="font-medium">Ubicación</h3>
-                  <p className="text-sm text-muted-foreground">{companyInfo.address}</p>
+                  <h3 className="mb-1 text-sm font-semibold text-primary">Correo</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {companyInfo.email}
+                    {companyInfo.email2 ? `\n${companyInfo.email2}` : ''}
+                  </p>
                 </div>
-              </CardContent>
-            </Card>
-            <a
-              href={companyInfo.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
-              <Button className="w-full gap-2" size="lg">
-                <MessageCircle className="size-5" />
-                Escribinos por WhatsApp
-              </Button>
-            </a>
+                <div>
+                  <h3 className="mb-1 text-sm font-semibold text-primary">Horarios</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                    {companyInfo.schedule}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

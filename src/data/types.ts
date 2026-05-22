@@ -8,6 +8,7 @@ export interface Product {
   brand: string
   available: boolean
   colors?: string[]
+  badge?: string
 }
 
 export interface Service {
@@ -15,6 +16,7 @@ export interface Service {
   title: string
   description: string
   icon: string
+  badge?: string
 }
 
 export interface CompanyInfo {
@@ -24,4 +26,7 @@ export interface CompanyInfo {
   email: string
   address: string
   whatsapp: string
+  schedule?: string
+  phone2?: string
+  email2?: string
 }
